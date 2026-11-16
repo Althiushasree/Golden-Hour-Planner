@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Golden Hour Planner</string>
+
+    <!-- Login Screen -->
+    <string name="login_badge">PHOTOGRAPHER FIELD COMPANION</string>
+    <string name="login_title">Golden Hour Planner</string>
+    <string name="login_subtitle">Track exact local sunrise, sunset, civil twilight, and golden hour windows for every shoot.</string>
+    <string name="login_feature_solar">Live GPS solar timings in your local timezone</string>
+    <string name="login_feature_countdown">Minute-by-minute next solar event countdown</string>
+    <string name="login_feature_plans">Offline-ready Room photo-shoot planner</string>
+    <string name="btn_sign_in_google">Sign in with Google</string>
+    <string name="login_checking_session">Checking your session…</string>
+    <string name="login_signing_in">Signing in with Google…</string>
+    <string name="cd_app_logo">Golden Hour Planner app logo</string>
+
+    <!-- Auth Errors -->
+    <string name="error_auth_missing_client_id">Google Sign-In is not configured yet. Please ensure google-services.json and SHA-1 fingerprint are configured in Firebase Console.</string>
+    <string name="error_auth_no_user">Authentication succeeded, but no user profile was returned.</string>
+    <string name="error_auth_unexpected_credential">Unexpected Google credential type returned.</string>
+    <string name="error_auth_no_google_account">No Google account found on this device. Add a Google account in device Settings and try again.</string>
+    <string name="error_auth_provider_unavailable">Google Sign-In services are unavailable on this device or emulator.</string>
+    <string name="error_auth_failed">Google Sign-In failed. Please try again.</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_greeting_format">Welcome, %1$s</string>
+    <string name="cd_user_avatar">Signed-in user profile photo</string>
+    <string name="cd_logout">Log out</string>
+    <string name="logout_dialog_title">Sign out?</string>
+    <string name="logout_dialog_message">You will be returned to the sign-in screen. Your saved local photo-shoot plans will remain safe on this device.</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Location Card -->
+    <string name="label_current_location">Current Location</string>
+    <string name="location_detecting">Detecting your GPS coordinates…</string>
+    <string name="location_coords_format">Lat %1$.4f° • Lng %2$.4f°</string>
+    <string name="location_permission_denied">Location permission denied. Grant location access to load solar timings for your position.</string>
+    <string name="location_services_disabled">Location services (GPS/Network) are turned off. Enable Location in device settings and retry.</string>
+    <string name="location_unavailable">Unable to determine your current location. Move to an open area or retry.</string>
+    <string name="btn_retry_location">Retry Location</string>
+    <string name="btn_grant_permission">Grant Permission</string>
+    <string name="btn_open_settings">Location Settings</string>
+
+    <!-- Date & Actions -->
+    <string name="label_selected_date">Selected Date</string>
+    <string name="badge_today">Today</string>
+    <string name="btn_select_date">Select Date</string>
+    <string name="btn_photo_shoot_plans">Shoot Plans</string>
+    <string name="date_picker_title">Select Shoot Date</string>
+
+    <!-- Countdown Card -->
+    <string name="countdown_header_next_sunrise">Next Sunrise</string>
+    <string name="countdown_header_next_sunset">Next Sunset</string>
+    <string name="countdown_header_unavailable">Solar Countdown</string>
+    <string name="countdown_remaining_format">%1$02dh %2$02dm %3$02ds</string>
+    <string name="countdown_at_format">at %1$s</string>
+    <string name="countdown_past_date_note">Selected date events have passed. Showing next upcoming solar event:</string>
+    <string name="countdown_future_date_note">Countdown to sunrise on selected future date</string>
+    <string name="countdown_unavailable_note">Solar countdown unavailable for this date or location.</string>
+
+    <!-- Solar Timings Cards -->
+    <string name="section_golden_hours">Golden Hour Windows</string>
+    <string name="label_morning_golden_hour">Morning Golden Hour</string>
+    <string name="desc_morning_golden_hour">First hour after sunrise</string>
+    <string name="label_evening_golden_hour">Evening Golden Hour</string>
+    <string name="desc_evening_golden_hour">Final hour before sunset</string>
+
+    <string name="section_solar_details">Solar &amp; Twilight Timings</string>
+    <string name="label_sunrise">Sunrise</string>
+    <string name="label_sunset">Sunset</string>
+    <string name="label_solar_noon">Solar Noon</string>
+    <string name="label_day_length">Day Length</string>
+    <string name="label_civil_twilight_start">Civil Twilight Start</string>
+    <string name="label_civil_twilight_end">Civil Twilight End</string>
+    <string name="value_unavailable">Unavailable</string>
+    <string name="loading_solar_data">Fetching solar timings for your coordinates…</string>
+    <string name="last_updated_format">Last updated: %1$s (%2$s)</string>
+    <string name="btn_retry_api">Retry Fetch</string>
+
+    <!-- API Errors -->
+    <string name="error_no_internet">No internet connection. Please check your network and retry.</string>
+    <string name="error_api_http">Solar API returned an error (HTTP %1$d). Please retry.</string>
+    <string name="error_api_invalid_status">Solar data unavailable for this date or location (Status: %1$s).</string>
+    <string name="error_api_invalid_response">Received an unexpected response from the Sunrise-Sunset API.</string>
+
+    <!-- Photo-Shoot Plans Screen -->
+    <string name="title_photo_shoot_plans">Photo-Shoot Plans</string>
+    <string name="btn_add_plan">Add Plan</string>
+    <string name="empty_plans_title">No Photo-Shoot Plans Yet</string>
+    <string name="empty_plans_subtitle">Save locations, dates, and lighting notes for upcoming golden-hour shoots.</string>
+    <string name="cd_edit_plan">Edit plan</string>
+    <string name="cd_delete_plan">Delete plan</string>
+    <string name="delete_plan_title">Delete Photo-Shoot Plan?</string>
+    <string name="delete_plan_message">Remove "%1$s" scheduled for %2$s?</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Add / Edit Plan Screen -->
+    <string name="title_add_plan">Add Photo-Shoot Plan</string>
+    <string name="title_edit_plan">Edit Photo-Shoot Plan</string>
+    <string name="hint_plan_date">Shoot Date (yyyy-MM-dd)</string>
+    <string name="hint_plan_place">Place Name (e.g., Golden Gate Overlook)</string>
+    <string name="hint_plan_notes">Notes (lens, composition, lighting cues)</string>
+    <string name="btn_save_plan">Save Plan</string>
+    <string name="error_empty_date">Please select a shoot date.</string>
+    <string name="error_empty_place">Please enter a place name.</string>
+    <string name="error_empty_note">Please enter notes for your shoot.</string>
+    <string name="error_room_load">Unable to load saved plans from local storage.</string>
+    <string name="error_room_save">Unable to save plan to local storage.</string>
+    <string name="error_room_delete">Unable to delete plan from local storage.</string>
+    <string name="plan_saved_message">Photo-shoot plan saved.</string>
+    <string name="plan_deleted_message">Photo-shoot plan deleted.</string>
+</resources>

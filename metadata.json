@@ -1,0 +1,6 @@
+{
+  "name": "Golden Hour Planner",
+  "description": "A photographer-focused Golden Hour Planner with solar timings, countdowns, and Room photo-shoot plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
